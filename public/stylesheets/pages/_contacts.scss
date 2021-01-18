@@ -1,0 +1,70 @@
+.contacts-section {
+
+  .social {
+    position: static;
+  }
+
+  a {
+    font-weight: 600;
+    color: $main-blue-header;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.contacts-section__contact {
+  li {
+    display: flex;
+    align-items: center;
+
+    a {
+      padding: 5px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  svg {
+    width: 25px;
+    @media (max-width: $medium) {
+      width: 40px;
+    }
+  }
+
+  .fa-telegram-plane {
+    color: #0088cc;
+  }
+
+  .fa-viber {
+    color: #665cac;
+  }
+
+  .fa-whatsapp {
+    color: #25d366;
+  }
+
+  .fa-facebook-square {
+    color: #3b5998;
+  }
+
+  .fa-instagram-square {
+    color: #e1306c;
+  }
+
+  .fa-linkedin {
+    color: #0072b1;
+  }
+}
+
+.contacts-section__map {
+  margin-top: 40px;
+}
+
+.contacts-section__form {
+  .flex-button {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,74 @@
+.product-section {
+}
+
+.flex-s-reverse {
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+
+    .block-first {
+      order: 2;
+    }
+
+    .block-second {
+      order: 1;
+    }
+  }
+}
+
+.product-section__main-content {
+  .materialboxed {
+    max-width: 100%;
+  }
+
+  .img-right {
+    float: right;
+    margin: 5px;
+    @media (max-width: 600px) {
+      float: none;
+    }
+  }
+
+  .img-left {
+    float: left;
+    margin: 5px;
+    @media (max-width: 600px) {
+      float: none;
+    }
+  }
+
+  .img-wrapper {
+    @media (max-width: 600px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  p {
+    span {
+      color: $main-lightblue;
+      font-weight: 600;
+    }
+  }
+
+  ul {
+    margin: 15px 0;
+    padding-left: 40px;
+
+    li {
+      list-style: url("../source/icons/emojione-monotone_heavy-check-mark.svg");
+    }
+  }
+}
+
+.container-sectional-drawings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

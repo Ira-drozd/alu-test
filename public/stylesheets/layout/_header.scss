@@ -1,0 +1,141 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.my-header {
+  position: sticky;
+  z-index: 998;
+  top: 0;
+  background: white;
+  border-bottom: 1px solid #f2f2f2;
+
+  @media (max-width: $mobile-s) {
+    background: rgba(255, 255, 255, 0.6);
+    border-bottom: none;
+  }
+}
+
+.section-registration-link {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  background: $main-blue-header;
+
+  @media (max-width: $medium) {
+    background: $main-lightblue;
+  }
+
+  a {
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  svg {
+    width: 15px;
+    margin-right: 10px;
+  }
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 112px;
+  position: relative;
+
+  @media (max-width: $medium) {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @media (max-width: $mobile-s) {
+    min-height: auto;
+    height: 40px;
+    flex-direction: row;
+  }
+}
+
+.social {
+  position: absolute;
+  top: 5px;
+  right: 12px;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: $medium) {
+    right: 50px;
+    top: 30px;
+  }
+
+  @media (max-width: $mobile-s) {
+    flex-wrap: nowrap;
+    position: static;
+    flex-direction: row;
+    margin-left: 20%;
+  }
+
+  a {
+    margin: 5px;
+    color: $main-blue-header;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  svg {
+    width: 25px;
+    @media (max-width: $medium) {
+      width: 40px;
+    }
+    @media (max-width: $mobile-s) {
+      width: 30px;
+    }
+  }
+
+  .fa-phone-alt {
+    color: #25d366;
+    width: 22px;
+  }
+
+  .fa-telegram-plane {
+    color: #0088cc;
+  }
+
+  .fa-viber {
+    color: #665cac;
+  }
+
+  .fa-whatsapp {
+    color: #25d366;
+  }
+}
+
+.social_tel {
+
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2rem;
+  margin-left: 5px;
+
+  @media (max-width: $mobile-s) {
+    display: none;
+  }
+}
+
+.logo {
+  @media (max-width: $medium) {
+    align-self: flex-start;
+  }
+
+  @media (max-width: $mobile-s) {
+    align-self: center;
+    img {
+      width: 100px;
+    }
+  }
+}
